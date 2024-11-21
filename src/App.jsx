@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
@@ -7,8 +8,9 @@ function App() {
   return (
     <div className="mx-6 my-12 flex flex-col gap-20 sm:mx-8 md:mx-10 lg:mx-24">
       <Router>
-        <Layout />
+        <Navbar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

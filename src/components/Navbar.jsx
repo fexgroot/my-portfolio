@@ -2,7 +2,7 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 import PageLink from "./PageLink";
 import ThemeToggle from "./ThemeToggle";
 
-export default function Layout() {
+export default function Navbar() {
   const location = useLocation(); // Get the current location object
   const currentPath = location.pathname; // Extract the pathname
 
