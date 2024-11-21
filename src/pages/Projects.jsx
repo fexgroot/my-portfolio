@@ -9,7 +9,7 @@ export default function Projects() {
         with React and Tailwind CSS. I’m passionate about creating delightful
         user experiences and solving complex problems with simple solutions.
       </p>
-      <Button>Learn more</Button>
+      <Button className={"px-4 py-2"}>Learn more</Button>
     </div>
   );
 }
