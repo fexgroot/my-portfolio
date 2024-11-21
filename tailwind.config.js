@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -8,8 +9,8 @@ export default {
         montserrat: ["Montserrat"],
       },
       colors: {
-        primary: "#1d1718",
-        secondary: "#ebdfd6",
+        pri: "#1d1718",
+        sec: "#ebdfd6",
       },
     },
   },

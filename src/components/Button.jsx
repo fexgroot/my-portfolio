@@ -4,7 +4,7 @@ const Button = ({ href, children, className, onClick, ...props }) => {
     <Tag
       href={href}
       onClick={onClick}
-      className={`flex w-fit items-center justify-center gap-2 border-2 border-primary px-4 py-2 font-medium hover:bg-primary hover:text-secondary ${className}`}
+      className={`border-pri hover:bg-pri dark:border-sec hover:text-sec dark:text-sec dark:hover:text-pri dark:hover:bg-sec flex w-fit items-center justify-center gap-2 border-2 px-4 py-2 font-medium ${className}`}
       {...props}
     >
       {children}

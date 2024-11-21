@@ -1,5 +1,6 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
 import PageLink from "./PageLink";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Layout() {
   const location = useLocation(); // Get the current location object
@@ -10,23 +11,24 @@ export default function Layout() {
       <header className="flex items-center justify-between">
         <PageLink
           href="/"
-          className={`font-grand text-4xl text-primary sm:text-6xl md:text-7xl`}
+          className={`text-pri dark:text-sec font-grand text-4xl sm:text-6xl md:text-7xl`}
         >
           portfolio
         </PageLink>
-        <nav className="flex justify-center gap-8 font-medium">
+        <nav className="flex items-center justify-center gap-8 font-medium">
           <PageLink
-            href="/library"
-            className={`text-lg tracking-widest text-primary hover:line-through ${currentPath === "/library" ? "line-through" : ""}`}
+            href="/projects"
+            className={`text-pri dark:text-sec text-lg tracking-widest hover:line-through ${currentPath === "/projects" ? "line-through" : ""}`}
           >
-            library
+            projects
           </PageLink>
           <PageLink
             href="/contact"
-            className={`text-lg tracking-widest text-primary hover:line-through ${currentPath === "/contact" ? "line-through" : ""}`}
+            className={`text-pri dark:text-sec text-lg tracking-widest hover:line-through ${currentPath === "/contact" ? "line-through" : ""}`}
           >
             contact
           </PageLink>
+          <ThemeToggle />
         </nav>
       </header>
       <Outlet />
