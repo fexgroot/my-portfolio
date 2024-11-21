@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 export default function Contact() {
   return (
-    <div className="dark:text-sec flex max-w-[50%] flex-col gap-4">
+    <div className="dark:text-sec flex flex-col gap-4 lg:max-w-[50%]">
       <h2>Get in touch</h2>
       <p>
         If you’d like to chat about a project or need help with something, feel

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import * as Icon from "react-feather";
+import { Tooltip } from "react-tooltip";
 import Button from "./Button";
 
 const ThemeToggle = () => {
@@ -20,12 +21,20 @@ const ThemeToggle = () => {
   }, [darkMode]);
 
   return (
-    <Button
-      onClick={() => setDarkMode(!darkMode)}
-      className="rounded-full px-2"
-    >
-      {darkMode ? <Icon.Sun /> : <Icon.Moon />}
-    </Button>
+    <>
+      <Button
+        data-tooltip-id="theme-toggle"
+        data-tooltip-content="Toggle theme"
+        data-tooltip-variant={darkMode ? "light" : "dark"}
+        onClick={() => setDarkMode(!darkMode)}
+        className="rounded-full px-2"
+      >
+        {darkMode ? <Icon.Moon /> : <Icon.Sun />}
+      </Button>
+      <div className="invisible md:visible">
+        <Tooltip id="theme-toggle" />
+      </div>
+    </>
   );
 };
 
