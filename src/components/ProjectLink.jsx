@@ -15,6 +15,9 @@ const ProjectLink = ({ title, imageUrl, githubUrl, liveUrl }) => {
       />
 
       {/* Overlay Title (can use pointer-events-none)*/}
+
+      {/* ! TODO: put img in public folder because its not visible on live site.... and users should be allowed to view it riht? with right click view. and then it'll go to /slate.webp or/orange.webp */}
+
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
         <h2 className="text-lg font-semibold text-white">{title}</h2>
       </div>
