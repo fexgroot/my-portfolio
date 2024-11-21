@@ -9,11 +9,6 @@
   src: url("../fonts/GrandSlang-Roman.ttf") format("truetype");
 }
 
-::selection {
-  background-color: #1a1819;
-  color: #ece7e1;
-}
-
 :root {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
