@@ -15,7 +15,7 @@ export default function Layout() {
         >
           portfolio
         </PageLink>
-        <nav className="flex items-center justify-center gap-8 font-medium">
+        <nav className="flex items-center justify-end gap-8 font-medium">
           <PageLink
             href="/projects"
             className={`text-pri dark:text-sec text-lg tracking-widest hover:line-through ${currentPath === "/projects" ? "line-through" : ""}`}

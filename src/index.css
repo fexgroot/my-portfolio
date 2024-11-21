@@ -41,3 +41,9 @@ a {
   text-decoration: none;
   user-select: none;
 }
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
