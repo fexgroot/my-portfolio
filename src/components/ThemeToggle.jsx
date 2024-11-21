@@ -31,7 +31,7 @@ const ThemeToggle = () => {
       >
         {darkMode ? <Icon.Moon /> : <Icon.Sun />}
       </Button>
-      <div className="invisible md:visible">
+      <div className="invisible select-none md:visible">
         <Tooltip id="theme-toggle" />
       </div>
     </>
