@@ -5,18 +5,17 @@ const darkMode = localStorage.getItem("theme") === "dark";
 
 const ProjectLink = ({ title, imageUrl, githubUrl }) => {
   return (
-    <div className="project-link dark:bg-primary relative flex flex-col overflow-hidden border-2 border-pri bg-sec dark:border-gray-700">
-      {/* Project Image */}
+    <div className="project-link dark:bg-primary relative flex flex-col overflow-hidden border-2 border-pri bg-sec dark:border-sec dark:bg-pri">
       <img
         src={imageUrl}
         alt={title}
         className="h-64 w-full select-none border-b-2 border-pri object-cover transition-transform duration-300"
         draggable="false"
       />
-
-      {/* Button Section */}
       <div className="flex items-center justify-between gap-2 p-2">
-        <h3 className="select-none text-lg font-medium">{title}</h3>
+        <h3 className="select-none text-lg font-medium dark:text-sec">
+          {title}
+        </h3>
         <Button
           data-tooltip-id="github"
           data-tooltip-content="View on GitHub"
