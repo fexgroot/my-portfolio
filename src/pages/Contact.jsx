@@ -9,7 +9,7 @@ export default function Contact() {
         If you’d like to chat about a project or need help with something, feel
         free to send me an email. I’ll get back to you as soon as possible!
       </p>
-      <Button href="mailto:contact@my-portfolio.com" className={"px-4 py-2"}>
+      <Button href="mailto:fnagy@st.noorderpoort.nl" className={"px-4 py-2"}>
         <Icon.Mail />
         Send an email
       </Button>
