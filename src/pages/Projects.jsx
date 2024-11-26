@@ -1,4 +1,4 @@
-import ProjectLink from "../components/Projectlink";
+import ProjectLink from "../components/ProjectLink";
 
 export default function Projects() {
   return (
@@ -13,17 +13,17 @@ export default function Projects() {
       <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <ProjectLink
           title="Grumpy Tasks"
-          imageUrl="public/img/grumpy-tasks.png"
+          imageUrl="img/grumpy-tasks.png"
           githubUrl="https://github.com/fexgroot/grumpy-tasks"
         />
         <ProjectLink
           title="Tasker"
-          imageUrl="public/img/tasker.png"
+          imageUrl="img/tasker.png"
           githubUrl="https://github.com/fexgroot/tasker"
         />
         <ProjectLink
           title="Project 3"
-          imageUrl="public/img/slate.webp"
+          imageUrl="img/slate.webp"
           githubUrl="https://github.com/fexgroot/project-3"
         />
       </div>
