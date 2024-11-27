@@ -10,7 +10,7 @@ export default function Contact() {
         free to send me an email. I’ll get back to you as soon as possible!
       </p>
       <Button href="mailto:fnagy@st.noorderpoort.nl" className={"px-4 py-2"}>
-        <Icon.Mail />
+        <Icon.Mail strokeWidth={1.5}/>
         Send an email
       </Button>
     </div>

@@ -24,7 +24,7 @@ const ProjectLink = ({ title, imageUrl, githubUrl }) => {
           target="_blank"
           className="rounded-full p-2"
         >
-          <Icon.GitHub />
+          <Icon.GitHub strokeWidth={1.5}/>
         </Button>
       </div>
     </div>
