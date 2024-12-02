@@ -29,9 +29,15 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? (
-            <Icon.X strokeWidth={1.5} className="h-8 w-8 text-pri dark:text-sec" />
+            <Icon.X
+              strokeWidth={1.5}
+              className="h-8 w-8 text-pri dark:text-sec"
+            />
           ) : (
-            <Icon.Menu strokeWidth={1.5} className="h-8 w-8 text-pri dark:text-sec" />
+            <Icon.Menu
+              strokeWidth={1.5}
+              className="h-8 w-8 text-pri dark:text-sec"
+            />
           )}
         </button>
 
@@ -69,9 +75,9 @@ export default function Navbar() {
       <nav
         className={`${
           isMobileMenuOpen ? "block" : "hidden"
-        } bg-white font-medium dark:bg-gray-800 md:hidden`}
+        } bg-sec border-2 border-pri dark:border-sec p-2 font-medium dark:bg-pri md:hidden -mt-10`}
       >
-        <ul className="flex flex-col items-start gap-4 px-4 py-6">
+        <ul className="flex flex-col items-start gap-4">
           <li>
             <PageLink
               href="/about"

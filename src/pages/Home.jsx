@@ -11,7 +11,9 @@ export default function Home() {
         user experiences and solving complex problems with simple solutions.
       </p>
       <Button>
-        <PageLink href="/about" className={"px-4 py-2"}>Learn more</PageLink>
+        <PageLink href="/about" className={"px-4 py-2"}>
+          Learn more
+        </PageLink>
       </Button>
     </div>
   );
