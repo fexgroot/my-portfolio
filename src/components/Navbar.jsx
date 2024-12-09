@@ -23,23 +23,26 @@ export default function Navbar() {
         </PageLink>
 
         {/* Hamburger icon for mobile */}
-        <button
-          onClick={toggleMobileMenu}
-          className="block focus:outline-none md:hidden"
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? (
-            <Icon.X
-              strokeWidth={1.5}
-              className="h-8 w-8 text-pri dark:text-sec"
-            />
-          ) : (
-            <Icon.Menu
-              strokeWidth={1.5}
-              className="h-8 w-8 text-pri dark:text-sec"
-            />
-          )}
-        </button>
+        <div className="flex items-center gap-4 md:hidden">
+          <ThemeToggle padding="1" />
+          <button
+            onClick={toggleMobileMenu}
+            className="block focus:outline-none md:hidden"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? (
+              <Icon.X
+                strokeWidth={1.5}
+                className="h-8 w-8 text-pri dark:text-sec"
+              />
+            ) : (
+              <Icon.Menu
+                strokeWidth={1.5}
+                className="h-8 w-8 text-pri dark:text-sec"
+              />
+            )}
+          </button>
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center justify-end gap-8 font-medium md:flex">
@@ -67,7 +70,7 @@ export default function Navbar() {
           >
             contact
           </PageLink>
-          <ThemeToggle />
+          <ThemeToggle padding="2" />
         </nav>
       </header>
 
@@ -78,7 +81,7 @@ export default function Navbar() {
         } -mt-10 border-pri font-medium md:hidden`}
       >
         <ul className="mt-4 flex flex-col items-start gap-4">
-          <hr className="w-full border-2 border-pri dark:border-sec opacity-25" />
+          <hr className="w-full border-2 border-pri opacity-25 dark:border-sec" />
           <li>
             <PageLink
               href="/about"
