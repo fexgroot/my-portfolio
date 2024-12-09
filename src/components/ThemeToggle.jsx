@@ -3,7 +3,7 @@ import * as Icon from "react-feather";
 import { Tooltip } from "react-tooltip";
 import Button from "./Button";
 
-const ThemeToggle = ({ padding }) => {
+const ThemeToggle = () => {
   const [darkMode, setDarkMode] = useState(() => {
     // Load initial state from localStorage or default to light mode
     return localStorage.getItem("theme") === "dark";
@@ -27,7 +27,7 @@ const ThemeToggle = ({ padding }) => {
         data-tooltip-content="Toggle theme"
         data-tooltip-variant={darkMode ? "light" : "dark"}
         onClick={() => setDarkMode(!darkMode)}
-        className={`rounded-full p-[${padding}]`}
+        className={`rounded-full p-1.5`}
       >
         {darkMode ? <Icon.Moon /> : <Icon.Sun />}
       </Button>

@@ -24,7 +24,7 @@ export default function Navbar() {
 
         {/* Hamburger icon for mobile */}
         <div className="flex items-center gap-4 md:hidden">
-          <ThemeToggle padding="4px" />
+          <ThemeToggle />
           <button
             onClick={toggleMobileMenu}
             className="block focus:outline-none md:hidden"
@@ -70,7 +70,7 @@ export default function Navbar() {
           >
             contact
           </PageLink>
-          <ThemeToggle padding="8px" />
+          <ThemeToggle />
         </nav>
       </header>
 
