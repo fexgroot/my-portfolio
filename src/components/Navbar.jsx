@@ -75,9 +75,10 @@ export default function Navbar() {
       <nav
         className={`${
           isMobileMenuOpen ? "block" : "hidden"
-        } bg-sec border-2 border-pri dark:border-sec p-2 font-medium dark:bg-pri md:hidden -mt-10`}
+        } -mt-10 border-pri font-medium md:hidden`}
       >
-        <ul className="flex flex-col items-start gap-4">
+        <ul className="mt-4 flex flex-col items-start gap-4">
+          <hr className="w-full border-2 border-pri dark:border-sec opacity-25" />
           <li>
             <PageLink
               href="/about"
@@ -111,12 +112,8 @@ export default function Navbar() {
               contact
             </PageLink>
           </li>
-          <li>
-            <ThemeToggle />
-          </li>
         </ul>
       </nav>
-
       <Outlet />
     </>
   );

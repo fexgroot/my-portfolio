@@ -7,7 +7,7 @@ import About from "./pages/About";
 
 function App() {
   return (
-    <div className="mx-6 my-12 flex flex-col gap-20 sm:mx-8 md:mx-10 lg:mx-24">
+    <div className="mx-6 my-6 md:my-12 flex flex-col gap-12 md:gap-20 sm:mx-8 md:mx-10 lg:mx-24">
       <Router>
         <Navbar />
         <Routes>
