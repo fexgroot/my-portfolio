@@ -27,7 +27,7 @@ const ThemeToggle = ({ padding }) => {
         data-tooltip-content="Toggle theme"
         data-tooltip-variant={darkMode ? "light" : "dark"}
         onClick={() => setDarkMode(!darkMode)}
-        className={`rounded-full p-${padding}`}
+        className={`rounded-full p-[${padding}]`}
       >
         {darkMode ? <Icon.Moon /> : <Icon.Sun />}
       </Button>
