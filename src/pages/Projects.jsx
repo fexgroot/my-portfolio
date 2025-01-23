@@ -7,7 +7,7 @@ export default function Projects() {
         <h2>My work</h2>
         <p>
           Here are a few projects I’ve worked on recently. They showcase my
-          skills and experience with React, Vue, Tailwind CSS, Python and more.
+          skills and experience with Vue, Tailwind CSS, Python and more.
         </p>
       </div>
       <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

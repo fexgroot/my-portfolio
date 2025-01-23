@@ -17,9 +17,9 @@ export default function Navbar() {
       <header className="flex items-center justify-between">
         <PageLink
           href="/"
-          className="font-grand text-4xl text-pri dark:text-sec sm:text-6xl md:text-7xl"
+          className="font-grand text-4xl text-pri dark:text-sec sm:text-5xl md:text-6xl lg:text:7xl"
         >
-          portfolio
+          felix nagy
         </PageLink>
 
         {/* Hamburger icon for mobile */}
