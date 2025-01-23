@@ -8,7 +8,7 @@ export default function Home() {
       <p>I'm Felix. Welcome to my portfolio site.</p>
       <Button>
         <PageLink href="/about" className={"px-4 py-2"}>
-          Learn more
+          Keep reading
         </PageLink>
       </Button>
     </div>
