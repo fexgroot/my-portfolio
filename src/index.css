@@ -19,7 +19,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 /* every time i tab and focus, the outline should be color red  and with padding of 2px */
 *:focus-visible {
   outline: 1px solid #1a1819;

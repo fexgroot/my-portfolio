@@ -21,11 +21,6 @@ export default function Projects() {
           imageUrl="img/tasker.png"
           githubUrl="https://github.com/fexgroot/tasker"
         />
-        <ProjectLink
-          title="Project 3"
-          imageUrl="img/slate.webp"
-          githubUrl="https://github.com/fexgroot/project-3"
-        />
       </div>
     </div>
   );
