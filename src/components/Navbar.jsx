@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="flex items-center justify-between">
+      <header className="flex items-center justify-between mb-12">
         <PageLink
           href="/"
           className="lg:text:7xl font-grand text-4xl text-pri hover:line-through dark:text-sec sm:text-5xl md:text-6xl"

@@ -5,11 +5,11 @@ const darkMode = localStorage.getItem("theme") === "dark";
 
 const ProjectLink = ({ title, imageUrl, githubUrl }) => {
   return (
-    <div className="project-link dark:bg-primary relative flex flex-col overflow-hidden border-2 border-pri bg-sec dark:border-sec dark:bg-pri">
+    <div className="project-link dark:bg-primary relative flex flex-col  aspect-square overflow-hidden border-2 border-pri bg-sec dark:border-sec dark:bg-pri">
       <img
         src={imageUrl}
         alt={title}
-        className="h-64 w-full select-none border-b-2 border-pri object-cover transition-transform duration-300"
+        className="h-full select-none border-b-2 border-pri object-cover transition-transform duration-300"
         draggable="false"
       />
       <div className="flex items-center justify-between gap-2 p-2">
