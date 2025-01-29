@@ -5,10 +5,12 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Footer from "./components/Footer";
+import StructuredData from "./components/SEO";
 
 function App() {
   return (
     <div className="mx-6 my-6 flex h-[92vh] flex-col justify-between gap-12 sm:mx-8 md:mx-10 md:my-12 md:gap-20 lg:mx-24">
+      <StructuredData />
       <div>
         <Router>
           <Navbar />
